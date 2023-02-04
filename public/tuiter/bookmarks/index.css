@@ -1,0 +1,125 @@
+
+body {
+    background: black;
+    margin-left: 16px;
+    font-family: Arial, serif;
+}
+div {
+
+    margin-left: 16px;
+    width: 575px;
+    border: 1px solid rgb(47, 51, 54);
+    padding: 12px;
+}
+#dots {
+    color: rgb(29,161,242);
+    float: right;
+}
+
+h1{
+    color: white;
+    line-height: 0px;
+    font-size: 20px;
+}
+.wd-header{
+    color: rgb(110, 118, 125);
+}
+#handle {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.wd-bookmarked-user {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+#plo-koon-bio {
+    color: white;
+    margin-left: 60px;
+    margin-right: 12px;
+    width:506px;
+
+}
+#user-handle{
+    margin-left: 60px;
+    margin-top: 5px;
+    line-height: 0px;
+}
+#plo-koon {
+    float: left;
+    border-radius: 50%;
+    width: 48px;
+}
+b {
+
+    color: white;
+
+}
+#jedi-council {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-left: 60px;
+    margin-right: 12px;
+    border: 1px solid rgb(47, 51, 54);
+}
+#user-dots {
+    float: right;
+    line-height: 0px;
+    margin-top: 0px;
+}
+
+#article {
+    width: 504px;
+    height: 115px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-left: 60px;
+    margin-right: 12px;
+    padding: 0px;
+
+
+}
+#twitter-reply,  #retweet, #share-posts {
+
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    padding: 12px;
+    margin-left: 60px;
+
+
+}
+#like {
+    margin-left: 60px;
+    color: red;
+}
+#article-title   {
+
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    line-height: 0px;
+}
+#jedi-council-article {
+
+    color:rgb(110, 118, 125);
+    font-size: 12px;
+    margin-left: 12px;
+}
+#comment, #repost  {
+    font-family: Arial, serif;
+    color:rgb(110, 118, 125);
+    font-size: 12px;
+}
+
+#likes {
+    font-family: Arial, serif;
+    color:red;
+    font-size: 12px;
+}
+#link {
+    font-family: Arial, serif;
+    color:rgb(110, 118, 125);
+    font-size: 12px;
+    margin-left: 10px;
+}
