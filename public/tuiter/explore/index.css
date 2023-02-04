@@ -9,6 +9,7 @@ div {
     border: thin solid rgb(47, 51, 54);
     padding: 16px;
 }
+
 /* Requirement A */
 .wd-search-bar {
     padding: 16px;
@@ -22,6 +23,7 @@ div {
 /* used this website: https://community.hubspot.com/t5/CMS-Development/Magnifying-glass-icon-in-search-bar/m-p/338441
 for getting the magnifying glass inside the search bar */
 #search-bar {
+
     border-radius: 25px;
     border: 2px solid rgb(47, 51, 54);
     background-color: rgb(47, 51, 54);
