@@ -37,9 +37,12 @@ body {
 }
 
 #starship{
-    margin-left: 16px;
-    height: 400px;
-    width: 95%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+
 
 }
 
@@ -66,9 +69,13 @@ body {
 #bottom-left {
     font-family: Arial, serif;
     position: absolute;
-    bottom: 430px;
+    font-size: 28px;
     color: white;
-    left: 670px;
+
+    bottom: 0;
+    left: 4%;
+    right: 0;
+    top: 88%;
 }
 
 #caption{
@@ -121,8 +128,18 @@ body {
     }
 
 }
-@media (min-width: 760px) and (max-width: 1050px) {
-    #sports, #news, #gear {
+@media (min-width: 980px) and (max-width: 1050px) {
+    #sports, #news, #gear  {
+        display: none;
+    }
+}
+#home-text, #explore-text, #notifications-text, #messages-text, #bookmark-text,
+#lists-text, #profile-text, #more-text {
+    font-weight: normal;
+}
+@media (max-width: 1500px) {
+    #home-text, #explore-text, #notifications-text, #messages-text, #bookmark-text,
+    #lists-text, #profile-text, #more-text {
         display: none;
     }
 }
