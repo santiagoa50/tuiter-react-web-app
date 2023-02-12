@@ -1,123 +1,128 @@
 body {
-    background: black;
+    font-size: 14px;
     margin-left: 16px;
-    font-family: Arial, serif;
-}
-div {
-    margin-left: 16px;
-    width: 570px;
-    border: thin solid rgb(47, 51, 54);
-    padding: 16px;
+    font-family:  Helvetica Neuel serif;
+    margin-top: 16px;
+
 }
 
-/* Requirement A */
+.row {
+    display: flex;
+}
+
+
+#navigation {
+    width: 100%;
+
+}
+
+#tabs {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    float: right;
+
+}
+
 .wd-search-bar {
     padding: 16px;
 }
+
 #gear {
     font-size: 25px;
-    float: right;
-    margin-right: 12px;
+    float:right;
     color: rgb(29,161,242);
 }
-/* used this website: https://community.hubspot.com/t5/CMS-Development/Magnifying-glass-icon-in-search-bar/m-p/338441
-for getting the magnifying glass inside the search bar */
-#search-bar {
 
-    border-radius: 25px;
-    border: 2px solid rgb(47, 51, 54);
-    background-color: rgb(47, 51, 54);
+#starship{
     margin-left: 16px;
-    padding: 12px;
-    color: white;
-    width: 455px;
-    height: 0px;
-    background-image: url("magnifying-glass.png");
-    background-repeat: no-repeat;
-    background-position: 15px 6px;
-    font-size: 13px;
+    height: 400px;
+    width: 95%;
 
-    background-size: 13px;
 }
 
-#divider {
-    border-color: rgb(47, 51, 54);
-    background-color: rgb(15,15,15);
-    width:595px;
-    height:0px;
-    padding: 4px;
-}
-/* Requirement B */
-a:link {
+#search-bar {
+    border-radius: 25px;
+    border: 1px solid rgb(47, 51, 54);
     padding: 16px;
-    color: rgb(110, 118, 125);
-    font-size: 15px;
-    text-decoration: none;
-}
-
-#highlight {
-    float:left;
-    padding-left: 16px;
-    color:rgb(29,161,242);
-}
-.rectangle {
-    padding: 5px;
-    width: 593px;
-    background-color: black;
-    border: solid rgb(47, 51, 54);
-}
-
-/* Requirement C, D, E*/
-
-#dots1, #dots2{
-
-    float: right;
+    width: 90%;
+    height: 0;
     font-size: 13px;
-
-}
-b {
-    color: white;
-}
-
-h3 {
-    line-height: 0;
-    color: white;
-}
-.wd-trending {
-
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 13px;
-    color: rgb(110, 118, 125);
-}
-
-.wd-official {
-
-    padding-bottom: 65px;
-    font-size: 13px;
-    color: rgb(110, 118, 125);
-}
-
-.wd-live {
-
-    padding-bottom: 65px;
-    font-size: 13px;
-    color: rgb(110, 118, 125);
+    margin-bottom: 8px;
 
 }
 
-#senate, #yoda {
+#java, #relativity-space, #virgin-galactic, #nasa, #tesla {
     vertical-align: middle;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
-#darth-vader, #jedi-temple, #order-66, #grevious {
-    float: right;
+    height: 35px;
+    width: 35px;
     margin-right: 16px;
+    float: left;
+}
+
+#bottom-left {
+    font-family: Arial, serif;
+    position: absolute;
+    bottom: 430px;
+    color: white;
+    left: 670px;
+}
+
+#caption{
+    color: white;
+}
+
+#reactjs, #javascript, #jquery, #nodejs{
+    float: right;
     border-radius: 25px;
-    height: 100px;
-    width: 100px;
+    margin-left: 16px;
+    height: 85px;
+    width: 85px;
 
 }
 
+#who-to-follow {
+    display: flex;
+
+
+}
+.button {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 5px 13px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    float: right;
+    margin-top: 3px;
+    vertical-align: center;
+
+}
+
+#tweets {
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+@media (max-width: 1350px) {
+    #recommended, #entertainment, #house{
+        display: none;
+    }
+
+}
+@media (width: 1300px) {
+    col.sm-1 {
+        column-width: 10px;
+    }
+
+}
+@media (min-width: 760px) and (max-width: 1050px) {
+    #sports, #news, #gear {
+        display: none;
+    }
+}

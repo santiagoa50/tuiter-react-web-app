@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <!-- CDN stands for Content Delivery Network and are remote servers dedicated to hosting
+    common files and resources used by a community -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <!-- 3.6 Decorating documents with Fontawesome icons -->
+    <!-- CDN stands for Content Delivery Network and are remote servers dedicated to hosting
+    common files and resources used by a community -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="a4-challenge-index.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class ="row g-0 flex-nowrap">
+    <div class="col-sm-1 offset-md-3 " style="align-items: center">
+        <div class="list-group" id="navigation">
+
+            <a href="../navigation.html" id="back">Back</a>
+            <a href="#" class="list-group-item list-group-item-action" style="color: #0d6efd"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-house" id="home"></i> Home</a>
+            <a href="#" class="list-group-item list-group-item-action"><b><i class="fa-solid fa-hashtag" id="explore"></i> Explore</b></a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-bell" id="notifications"></i> Notifications</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-envelope" id="messages"></i> Messages</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-bookmark" id="bookmarks"></i> Bookmarks</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-fire"></i> Top Articles</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-user" id="profile"></i> Profile</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-comment-dots" id="more"></i> More</a>
+            <button class="button" id="tweet">Tweet</button>
+        </div>
+
+    </div>
+
+    <div class="col-md-4" style="float: left">
+        <div class="wd-search-bar">
+
+            <input  type="text" id="search-bar" placeholder="&#xF002;    Search Tuiter" style="font-family: Arial, FontAwesome,serif">
+            <a href="explore-settings.html"><span id="gear">&#9881;</span> </a>
+
+            <ul class="nav nav-tabs justify-content-center" style="width: 100%">
+                <li class="nav-item">
+                    <a class="nav-link active" style="border-bottom-color: #0d6efd" href="for-you.html">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item" id="news">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item" id="sports">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item" id="entertainment">
+                    <a class="nav-link d-md-block" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="wd-headline">
+
+
+        </div>
+
+        <ul class="list-group" id="tweets" style="width: 95%">
+            <li class="list-group-item">
+                <h6>Tennis Tournament &#x2022; LIVE</h6>
+                <b><h2 id="bottom-left">Australian Open 2023</h2></b>
+                <img src ="australia.jpg" id="australia" alt="AUSTRALIA">
+            </li>
+            <li class="list-group-item"><b style="float: right">...</b>
+                Politics &#x2022; Trending<br>
+                <b>Seizures</b><br>
+                4,953 Tweets
+
+            </li>
+            <li class="list-group-item">
+                <b>#InfinityPool</b><br>
+                See the electrifying thriller Infinity Pool in theaters - if you dare<br>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(47, 51, 54)"></i> Promoted by NEON
+
+            </li>
+            <li class="list-group-item"><b style="float: right">...</b>
+                Sports &#x2022; Trending<br>
+                <b>RIP Bean</b><br>
+                18K Tweets
+
+
+            </li>
+            <li class="list-group-item"><b style="float: right">...</b>
+                Politics &#x2022; Trending <br>
+                <b>Durham</b><br>
+                Trending with <b style="color:#0d6efd;">Barr, Barr</b>
+            </li>
+
+            </li>
+            <li class="list-group-item"><b style="float: right">...</b>
+                Trending in Business and finance<br>
+                <b>#Directed Evolution</b><br>
+                172K Tweets
+            </li>
+        </ul>
+    </div>
+
+
+    <div class ="row g-0 flex-nowrap">
+        <div class="col-md-2" id="recommended" style="float: left">
+            <ul class="list-group" id="who-to-follow" style="width: 100%">
+                <li class="list-group-item" id="header" style="background-color: rgb(232,232,232)"><b id="follow">Who to follow</b></li>
+                <li class="list-group-item" id="neu" style="background-color: rgb(232,232,232)">
+                    <img src="northeastern.jpg" id="northeastern"/>
+                    <button class="button">Follow</button>
+                    <b>Northeastern U. <i class="fa-solid fa-circle-check" style="color: #0d6efd;"></i></b> <br>
+                    @Northeastern
+
+                </li>
+                <li class="list-group-item" id="matt" style="background-color: rgb(232,232,232)">
+                    <img src="matt-wallace.jpg" id="matt-wallace"/>
+                    <button class="button">Follow</button>
+                    <b>Matt Wallace <i class="fa-solid fa-circle-check" style="color: #0d6efd;"></i></b> <br>
+                    @MattWallace888
+
+                </li>
+
+                <li class="list-group-item"id="points" style="background-color: rgb(232,232,232)">
+                    <img src="points-bet.png" id="points-bet"/>
+                    <button class="button">Follow</button>
+                    <b>PointsBet Sportsb... <i class="fa-solid fa-circle-check" style="color: gold"></i></b> <br>
+                    @PointsBetUSA<br>
+                    <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(47, 51, 54)"></i> Promoted
+                </li>
+
+                <li class="list-group-item" id="show-more"style="background-color: rgb(232,232,232)">
+                    <b style="color: #0d6efd">Show more</b>
+                </li>
+                <br>
+                Terms of Service   &nbsp; &nbsp;Privacy Policy    &nbsp; &nbsp;Cookie Policy<br>
+                Accessibility &nbsp; &nbsp;Ads info &nbsp; &nbsp;More ...<br>
+                &#169; 2023 Twitter, Inc.
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
