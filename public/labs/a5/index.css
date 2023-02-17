@@ -1,0 +1,21 @@
+/* 2.13 Getting and setting attributes */
+
+.class-0 {
+    background-color: red;
+    color: white;
+}
+
+/* 2.14 Adding and removing classes */
+.class-1 {
+    background-color: blue;
+    color: white;
+}
+.class-2 {
+    background-color: green;
+    color: yellow;
+}
+
+/* 2.15 Hiding and showing content */
+.im-hidden {
+   display: none;
+}
