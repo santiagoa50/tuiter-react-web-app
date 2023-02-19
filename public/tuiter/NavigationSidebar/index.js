@@ -1,4 +1,4 @@
-const NavigationSidebar = (active) => {
+const NavigationSidebar = () => {
     return(`
    <div class="list-group">
      <a class="list-group-item" href="/">

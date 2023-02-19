@@ -1,6 +1,6 @@
 // 3.3 Implement the Explore Screen component
-import NavigationSidebar from "../NavigationSidebar";
-import WhoToFollowList from "../WhoToFollowList";
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponent.js";
 
 function exploreComponent() {
