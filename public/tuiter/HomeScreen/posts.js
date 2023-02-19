@@ -30,5 +30,3 @@ export default [
         image: '../../images/node.png',
         tweets: '120K',
     },];
-
-

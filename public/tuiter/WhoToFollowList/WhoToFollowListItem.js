@@ -1,11 +1,11 @@
 const WhoToFollowListItem = (who) =>
 {
     return(`
-    <li>
+    <ul class="list-group-item">
       ${who.avatarIcon}
       ${who.userName}
       ${who.handle}
-    </li>`
+    </ul>`
     );
 }
 

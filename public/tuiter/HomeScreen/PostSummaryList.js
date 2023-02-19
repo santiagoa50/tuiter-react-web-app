@@ -18,10 +18,7 @@ const PostSummaryList = () => {
     
     
      <ul class="list-group" id="tweets" style="width: 100%">
-                    <li class="list-group-item">
-                        <b><h2 id="bottom-left">SpaceX's Starship</h2></b>
-                        <img src ="../../images/ship.jpg" id="starship" alt="STARSHIP">
-                    </li>
+                    
                     <li class="list-group-item"><img src="../../images/reactjs.jpg" id="reactjs"/>
                         Web Development<br>
                         <b>ReactJS <i class="fa-solid fa-circle-check"></i></b> - 2h<br>

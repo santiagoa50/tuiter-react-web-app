@@ -1,5 +1,6 @@
 import PostSummaryItem from "./PostSummaryItem.js";
 import posts from "./posts.js";
+import PostItem from "./PostItem.js";
 
 
 const PostSummaryList = () => {
@@ -10,24 +11,23 @@ const PostSummaryList = () => {
                 ${
         posts.map(who => {
 
-            return(PostSummaryItem(who));
+            return(PostItem(who));
         }).join('')
 
     }            
     </ul> -->
-    
-    
-     <ul class="list-group" id="tweets" style="width: 100%">
-                    <li class="list-group-item">
-                        <b><h2 id="bottom-left">SpaceX's Starship</h2></b>
-                        <img src ="../../images/ship.jpg" id="starship" alt="STARSHIP">
-                    </li>
-                    <li class="list-group-item"><img src="../../images/reactjs.jpg" id="reactjs"/>
-                        Web Development<br>
-                        <b>ReactJS <i class="fa-solid fa-circle-check"></i></b> - 2h<br>
-                        <b>React.js is a component based front end library that makes it very
-                        easy to build Single Page Applications or SPAs</b>
-
+   <ul class="list-group" id="tweets" style="width: 100%">
+                    
+                    <li class="list-group-item" style="background-color: black"><img src="../../images/elon.webp" id="elon"/>
+                    <p style="float: right">
+                        ...
+                    </p>
+                        <b>&nbsp;&nbsp;Elon Musk <i class="fa-solid fa-circle-check"></i></b> - 2h<br>
+                        &nbsp; Amazing show about <a href="#" style="text-decoration: none">@inspiration4</a> mission!
+                        
+                        <img src="../../images/inspiration.jpeg" id="inspiration">
+                        
+                        
                     </li>
                     <li class="list-group-item"><img src="../../images/javascript.png" id="javascript"/>
                         <b>JavaScript <i class="fa-solid fa-circle-check"></i></b> - 2h<br>
@@ -47,8 +47,7 @@ const PostSummaryList = () => {
 
                     </li>
 
-                </ul>
-                
+                </ul>  
     
 `); }
 

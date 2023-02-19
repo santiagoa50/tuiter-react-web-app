@@ -2,16 +2,16 @@ import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import who from "./who.js"
 const WhoToFollowList = () => {
     return (`
-           <ul class="list-group">
+           <ul class="list-group" style="width: 80%">
            <!-- continue here -->
-           
+           <!--
                 ${
             who.map(who => {
                 
                 return(WhoToFollowListItem(who));
             }).join('')
         
-    }
+    } -->
                 <li class="list-group-item"><b>Who to follow</b></li>
                     <li class="list-group-item">
                         <img src="../../images/java.png" id="java" alt="JAVA"/>

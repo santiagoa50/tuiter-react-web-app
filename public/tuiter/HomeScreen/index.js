@@ -1,7 +1,6 @@
-// 3.3 Implement the Explore Screen component
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import WhoToFollowList from "../WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponent.js";
+import PostList from "./PostList.js";
 
 function exploreComponent() {
     $('#wd-explore').append(`
@@ -13,11 +12,11 @@ function exploreComponent() {
        </div>
        <div class="col-10 col-lg-7 col-xl-6  text-white">
         <!--<h3>ExploreComponent</h3>-->
-        ${ExploreComponent()}
+       ${PostList()}
        </div>
        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4  text-white">
         <!-- <h3>WhoToFollowList </h3> -->
-       ${WhoToFollowList()}
+       ${ExploreComponent()}
        </div>
       </div>
        `);
