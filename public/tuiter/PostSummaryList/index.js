@@ -4,8 +4,8 @@ import PostSummaryItem from "./PostSummaryItem.js";
 const PostSummaryList = () => {
     return (`
             <ul class='list-group'>
-            ${exploreItems.map(post => {
-        return (PostSummaryItem(post))
+            ${exploreItems.map(postItems => {
+        return (PostSummaryItem(postItems))
     }).join('')}
     </ul>
     `)

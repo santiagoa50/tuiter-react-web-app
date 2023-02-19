@@ -1,10 +1,10 @@
-import PostSummaryList from "../PostSummaryList/index.js";
+import PostSummaryList from "../PostSummaryList";
 
 const ExploreComponent = () => {
     return(`
             <div class="d-flex flex-row">
                        <!-- search field and cog -->
-                        <input  type="text" id="search-bar" placeholder="&#xF002;    Search Twitter" style="font-family: Arial, FontAwesome,serif" class="text-black"> 
+                        <input  type="text" id="search-bar" placeholder="&#xF002;    Search Tuiter" style="font-family: Arial, FontAwesome,serif"> 
                         <a href="../explore/explore-settings.html" style="float:right"><span id="gear">&#9881;</span> 
            </div>
             
@@ -27,14 +27,13 @@ const ExploreComponent = () => {
                         </li>
            </ul>
            <!-- image with overlaid text -->
-           <div class="position-relative" style="padding-bottom: 8px">
+           <div class="position-relative">
             <img src="../../images/ship.jpg" class="col-sm-12">
             
        <div class="position-absolute bottom-0">
             <h2 class="fw-bold ms-2" style="color: #303030">SpaceX's Starship</h2>
         </div>
         </div>
-        
            ${PostSummaryList()}
     `);
 }
