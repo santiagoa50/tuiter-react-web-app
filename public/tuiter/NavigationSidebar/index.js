@@ -7,8 +7,8 @@ const NavigationSidebar = (active) => {
        <!-- continue rest of list, e.g.,
             Home, Explore, Notifications,  Messages, etc. -->
              
-            <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-house" id="home"></i> <b id="home-text"> Home</b></a>
-            <a href="#" class="list-group-item list-group-item-action active"><i class="fa-solid fa-hashtag" id="explore"></i> <b id="explore-text"> Explore</b></a>
+            <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-house" id="home"></i> <b id="home-text"> Home</b></a>
+            <a href="../ExploreScreen/index.html" class="list-group-item list-group-item-action"><i class="fa-solid fa-hashtag" id="explore"></i> <b id="explore-text"> Explore</b></a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-bell" id="notifications"></i> <b id="notifications-text"> Notifications</b></a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-envelope" id="messages"></i> <b id="messages-text"> Messages</b></a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-bookmark" id="bookmarks"></i> <b id="bookmark-text"> Bookmarks</b></a>
