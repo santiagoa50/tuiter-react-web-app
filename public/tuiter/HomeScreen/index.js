@@ -1,6 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostSummaryList from "../PostSummaryList/index.js";
-import PostList from "../PostList/index.js";
+import PostList from "../../../src/tuiter/PostList/index.js";
 
 
 function homeComponent() {

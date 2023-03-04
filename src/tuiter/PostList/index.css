@@ -1,0 +1,48 @@
+
+.wd-no-decoration{
+    text-decoration: none;
+}
+
+.wd-icon-dimensions {
+    height: 48pt;
+    width: 48pt;
+}
+p{
+    margin-top:3px;
+    margin-bottom:3px;
+    font-size:12pt;
+}
+p.wd-small{
+    font-size:11pt;
+}
+p.wd-inline{
+    display:inline;
+}
+.wd-border-bottom{
+    border-bottom: 1px solid;
+}
+
+
+.wd-font-black{
+    color:black;
+}
+
+
+.fa-stack.wd-normalize-margin-more{
+    margin:-13px;
+}
+.fa-stack.wd-normalize-margin-t{
+    margin:-10px;
+}
+
+.fa.wd-smaller-size{
+    font-size:0.75em;
+}
+
+.wd-max-width{
+    width:100%;
+}
+.wd-profile-picture-size{
+    height:52px;
+    width:52px;
+}

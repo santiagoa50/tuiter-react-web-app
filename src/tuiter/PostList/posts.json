@@ -1,0 +1,29 @@
+[ { "_id": 123, "userName": "SpaceX", "handle": "SpaceX", "time": "23h",
+    "profilePicture": "spacex.jpg",
+    "tweet": "Dennis and Akkito Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon ->",
+    "image": "dennis.jpg",
+    "title": "Lorem ipsum dolor sit amet | Consectetur Adipiscing Elit",
+    "textSummary": "",
+    "link": "https://www.lipsum.com/",
+    "linkShort": "lipsum.com",
+    "comments": "4.2K",
+    "retuits": "3.5K",
+    "likes": "37.5K"
+  },
+  {
+    "_id": 234,
+    "userName": "Brandon",
+    "handle": "brandon",
+    "time": "Aug 22",
+    "profilePicture": "elon.webp",
+    "tweet": "Ut mi tortor, tincidunt venenatis leo nec, vulputate mattis erat. Nulla consectetur ut risusac scelerisque.",
+    "image": "elon.webp",
+    "title": "Pellentesque vitae eros ligula. Maecenas fringilla... ",
+    "textSummary": "Quisque quis est vulputate, malesuada velit euismod, eleifend arcu. Ut auctor vitae lorem eget hendrerit ...",
+    "link": "https://www.tumblr.com/",
+    "linkShort": "tumblr.com",
+    "comments": "965",
+    "retuits": "2.4K",
+    "likes": "4K"
+  }
+]
