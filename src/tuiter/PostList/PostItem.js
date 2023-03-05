@@ -11,12 +11,12 @@ const PostListItem = ( {post} ) => {
             </p>
             <div className="row">
                 <div className="col-md-auto">
-                    <img className= "rounded-pill mt-1 wd-profile-picture"
+                    <img className= "rounded-pill mt-1 wd-profile"
                          src={`/images/${post.profilePicture}`} alt="profilePicture"/>
                 </div>
                 <div className=" col-9 col-md-10 pe-0">
                     <div className="fw-bold d-inline">{post.userName} {' '}</div>
-                    <i className="bi bi-check-circle-fill"></i>
+                    <i className="bi bi-check-circle-fill" id="checkmark"></i>
                     <div className="text-secondary d-inline ms-2">@{post.handle}</div>
                     <div className="text-secondary d-inline">{' '}<b>·</b>  {post.time}</div>
                     <div>{post.tweet} </div>
@@ -36,21 +36,21 @@ const PostListItem = ( {post} ) => {
                     <div className="pt-3 pe-0">
                         <div className="row">
                             <Link to="#" className="col-3">
-                                <i className="bi bi-chat-fill" id="comment"></i>
-                                <div className="d-inline ms-2 text-secondary">{post.comments}</div>
+                                <i className="bi bi-chat" id="comment"></i>
+                                <div className="d-inline ms-2"><b id="text">{post.comments}</b></div>
                             </Link>
                             <Link to="#" className="col-3 text-decoration-none">
-                                <i className="bi bi-share-fill text-decoration-none" id="retweet"></i>
-                                <div className="d-inline ms-2 text-secondary text-decoration-none">{post.retweets}</div>
+                                <i className="bi bi-share" id="retweet"></i>
+                                <div className="d-inline ms-2 text-decoration-none"><b id="tweet">{post.retweets}</b></div>
                             </Link>
 
                             <Link to="#" className="col-3">
-                                <i className="bi bi-heart-fill" id="heart"></i>
-                                <div className="d-inline ms-2 text-secondary text-decoration-none">{post.likes}</div>
+                                <i className="bi bi-heart" id="heart"></i>
+                                <div className="d-inline ms-2 text-decoration-none"><b id="like">{post.likes}</b></div>
                             </Link>
 
                             <Link to="#" className="col-3">
-                                <i className="bi bi-box-arrow-up" ></i>
+                                <i className="bi bi-box-arrow-up" id="share"></i>
                             </Link>
 
                         </div>

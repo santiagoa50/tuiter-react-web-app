@@ -2,13 +2,14 @@
     text-decoration: none;
 }
 
-.wd-profile-picture{
+.wd-profile{
     height:52px;
     width:52px;
 }
 
-#heart, #retweet, #comment {
+#heart, #retweet, #comment, #share {
     text-decoration: none;
+    color: grey;
 }
 b {
     color: #0d6efd;
@@ -41,4 +42,12 @@ a:link {
 #articleTitle {
     margin-left: 5px;
     color: black;
+}
+
+#text, #tweet, #like {
+    text-decoration: none;
+    color: grey;
+}
+#checkmark {
+    color: #0d6efd;
 }
