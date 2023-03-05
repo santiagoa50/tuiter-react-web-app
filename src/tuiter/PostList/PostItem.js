@@ -22,7 +22,7 @@ const PostListItem = ( {post} ) => {
 
                     <div className="card border-light bg-black mt-3 me-0">
                         <img className= "wd-max-width rounded-top wd-border-bottom border-light"
-                             src={`/images/${post.image}` } alt="image"/>
+                             src={`/images/${post.image}` } alt="img"/>
                     </div>
 
                     <div className="pt-3 pb-2 ps-0 pe-0">
