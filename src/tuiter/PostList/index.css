@@ -12,6 +12,7 @@
 }
 b {
     color: #0d6efd;
+    margin-left: 5px;
 }
 #main {
     font-size: 14px;
@@ -19,4 +20,25 @@ b {
     font-family:  Helvetica Neuel serif;
 
 
+}
+#img {
+
+    border-radius: 2em;
+
+}
+
+#dots {
+    float: right;
+}
+a:link {
+    text-decoration: none;
+}
+
+#paragraph {
+    margin-left: 5px;
+
+}
+#articleTitle {
+    margin-left: 5px;
+    color: black;
 }

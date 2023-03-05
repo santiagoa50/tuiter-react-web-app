@@ -1,20 +1,24 @@
 [ { "_id": 123, "userName": "SpaceX", "handle": "SpaceX", "time": "23h",
     "profilePicture": "spacex.jpg",
-    "tweet": "Dennis and Akkito Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon ->",
+    "tweet": "Billionaire Dennis Tito, 82, and his wife Akiko Tito, will be among the dozen commercial passengers on board when SpaceX’s Starship takes its inaugural crewed trip around the moon.",
     "image": "dennis.jpg",
-    "comments": "4.2K",
-    "retweets": "3.5K",
-    "likes": "37.5K",
-    "link": "spacex.com/updates"
-  },
+    "comments": "595",
+    "retweets": "1,168",
+    "likes": "11.1k",
+    "link": "spacex.com/updates",
+    "articleTitle": "Dennis and Akkito Tito | SpaceX Official Site",
+    "articleText": "Dennis and Akkito Tito are the first two crewmembers on Starship's second commercial spaceflight around the moon "
+},
   {
     "_id": 234, "userName": "Elon Musk", "handle": "elonmusk", "time": "15h",
     "profilePicture": "elon.webp",
-    "tweet": "We might need a different name, as this basically just Starlink with roaming capability, so you can take your terminal anywhere.",
-    "image": "elon.webp",
-    "comments": "965",
-    "retweets": "2.4K",
-    "likes": "4K",
-    "link": ""
+    "tweet": "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
+    "image": "inspiration.jpeg",
+    "comments": "5,346",
+    "retweets": "1,601",
+    "likes": "19.2k",
+    "link": "netflix.com",
+    "articleTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+    "articleText": "From training to launch to landing, this all-access documentary series follows the first all-civilian mission to space."
   }
 ]
