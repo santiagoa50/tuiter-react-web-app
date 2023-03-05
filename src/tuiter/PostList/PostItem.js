@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./index.css";
 
 const PostListItem = ( {post} ) => {
@@ -10,7 +9,7 @@ const PostListItem = ( {post} ) => {
             <div className="row pt-1">
                 <div className="col col-2 col-md-auto">
                     <img className= "rounded-pill mt-1 wd-profile-picture-size"
-                         src={`/images/${post.profilePicture}`}/>
+                         src={`/images/${post.profilePicture}`} alt="profilePicture"/>
                 </div>
                 <div className="col col-9 col-md-10 pe-0">
                     <div className="fw-bold d-inline">{post.userName} {' '}</div>
@@ -23,7 +22,7 @@ const PostListItem = ( {post} ) => {
 
                     <div className="card border-light bg-black mt-3 me-0">
                         <img className= "wd-max-width rounded-top wd-border-bottom border-light"
-                             src={`/images/${post.image}`}/>
+                             src={`/images/${post.image}` } alt="image"/>
                     </div>
 
                     <div className="pt-3 pb-2 ps-0 pe-0">
