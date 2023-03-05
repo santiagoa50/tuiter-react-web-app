@@ -14,7 +14,7 @@ const PostListItem = ( {post} ) => {
                     <img className= "rounded-pill mt-1 wd-profile-picture"
                          src={`/images/${post.profilePicture}`} alt="profilePicture"/>
                 </div>
-                <div className="col col-9 col-md-10 pe-0">
+                <div className=" col-9 col-md-10 pe-0">
                     <div className="fw-bold d-inline">{post.userName} {' '}</div>
                     <i className="bi bi-check-circle-fill"></i>
                     <div className="text-secondary d-inline ms-2">@{post.handle}</div>
