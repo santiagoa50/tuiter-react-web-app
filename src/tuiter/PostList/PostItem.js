@@ -1,14 +1,13 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import "./index.css";
 
 const PostListItem = ( {post} ) => {
     return (
 
-        <li className="list-group-item  pe-2">
-            <div className="row pt-1">
+        <li className="list-group-item" id="main">
+            <div className="row">
                 <div className="col col-2 col-md-auto">
-                    <img className= "rounded-pill mt-1 wd-profile-picture-size"
+                    <img className= "rounded-pill mt-1 wd-profile-picture"
                          src={`/images/${post.profilePicture}`} alt="profilePicture"/>
                 </div>
                 <div className="col col-9 col-md-10 pe-0">
@@ -16,27 +15,31 @@ const PostListItem = ( {post} ) => {
                     <i className="bi bi-check-circle-fill"></i>
                     <div className="text-secondary d-inline ms-2">@{post.handle}</div>
                     <div className="text-secondary d-inline">{' '}<b>·</b>  {post.time}</div>
-                    <div className="mb-2">{post.tweet}</div>
+                    <div>{post.tweet}</div>
+                    <div className="d-inline" id="link"><b>{post.link}</b></div>
 
 
-
-                    <div className="card border-light bg-black mt-3 me-0">
-                        <img className= "wd-max-width rounded-top wd-border-bottom border-light"
-                             src={`/images/${post.image}` } alt="img"/>
+                    <div className="card border-light">
+                        <img className= "wd-max-width" src={`/images/${post.image}` } alt="img"/>
                     </div>
 
-                    <div className="pt-3 pb-2 ps-0 pe-0">
-                        <div className="row">
-                            <Link to="/tuiter/comments" className="col-3 wd-no-decoration">
-                                <div className="d-inline ms-2 text-secondary">{post.comments}</div>
-                            </Link>
-                            <Link to="/tuiter/retweets" className="col-3 wd-no-decoration">
+                    <div></div>
 
-                                <div className="d-inline ms-2 text-secondary">{post.retuits}</div>
-                            </Link>
-                            <Link to="/tuiter/likes" className="col-3 wd-no-decoration">
+                    <div className="pt-3 pe-0">
+                        <div className="row">
+                            <a href="#" className="col-3">
+                                <i className="bi bi-chat-fill" id="comment"></i>
+                                <div className="d-inline ms-2 text-secondary">{post.comments}</div>
+                            </a>
+                            <a href="#" className="col-3 text-decoration-none">
+                                <i className="bi bi-share-fill text-decoration-none" id="retweet"></i>
+                                <div className="d-inline ms-2 text-secondary text-decoration-none">{post.retweets}</div>
+                            </a>
+
+                            <a href="#" className="col-3">
+                                <i className="bi bi-heart-fill" id="heart"></i>
                                 <div className="d-inline ms-2 text-secondary">{post.likes}</div>
-                            </Link>
+                            </a>
 
                         </div>
 

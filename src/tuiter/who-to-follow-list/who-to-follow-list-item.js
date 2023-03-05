@@ -1,4 +1,5 @@
 import React from "react";
+import "../PostList/index.css"
 const WhoToFollowListItem = (
     {
         who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
@@ -6,7 +7,7 @@ const WhoToFollowListItem = (
     }
 ) => {
     return(
-        <li className="list-group-item">
+        <li className="list-group-item" id="main">
             <div className="row">
                 <div className="col-2">
                     <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} alt="img"/>

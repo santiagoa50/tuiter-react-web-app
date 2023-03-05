@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../PostList/index.css"
 const PostSummaryItem = (
     {
         post = {
@@ -12,7 +12,7 @@ const PostSummaryItem = (
     }
 ) => {
     return(
-        <li className="list-group-item">
+        <li className="list-group-item" id="main">
             <div className="row">
                 <div className="col-10">
                     <div>{post.userName}</div>
