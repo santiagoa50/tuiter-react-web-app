@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import {Link} from "react-router-dom";
 
 const PostListItem = ( {post} ) => {
     return (
@@ -27,19 +28,19 @@ const PostListItem = ( {post} ) => {
 
                     <div className="pt-3 pe-0">
                         <div className="row">
-                            <a href="#" className="col-3">
+                            <Link to="#" className="col-3">
                                 <i className="bi bi-chat-fill" id="comment"></i>
                                 <div className="d-inline ms-2 text-secondary">{post.comments}</div>
-                            </a>
-                            <a href="#" className="col-3 text-decoration-none">
+                            </Link>
+                            <Link to="#" className="col-3 text-decoration-none">
                                 <i className="bi bi-share-fill text-decoration-none" id="retweet"></i>
                                 <div className="d-inline ms-2 text-secondary text-decoration-none">{post.retweets}</div>
-                            </a>
+                            </Link>
 
-                            <a href="#" className="col-3">
+                            <Link to="#" className="col-3">
                                 <i className="bi bi-heart-fill" id="heart"></i>
                                 <div className="d-inline ms-2 text-secondary">{post.likes}</div>
-                            </a>
+                            </Link>
 
                         </div>
 
