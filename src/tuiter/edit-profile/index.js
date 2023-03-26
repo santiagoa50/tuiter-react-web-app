@@ -29,7 +29,7 @@ const EditProfileComponent = () => {
                      src={`../../images/han solo.jpg`} alt= "img"/>
             </div>
             <div className="mb-4">
-                <div className="container p-2 pt-0 border bg-light rounded-2">
+                <div className="container border bg-light rounded-2">
                     <label form="name" className="small text-secondary">
                         Name
                     </label><br/>
@@ -37,7 +37,7 @@ const EditProfileComponent = () => {
                 </div>
             </div>
             <div className="mb-4">
-                <div className="container p-2 pt-0 border bg-light rounded-2">
+                <div className="container border bg-light rounded-2">
                     <label form="bio" className="small text-secondary">
                         Bio
                     </label><br/>
@@ -47,7 +47,7 @@ const EditProfileComponent = () => {
             </div>
 
             <div className="mb-4">
-                <div className="container p-2 pt-0 border bg-light rounded-2">
+                <div className="container border bg-light rounded-2">
                     <label form="location" className="small text-secondary">
                         Location
                     </label><br/>
@@ -56,7 +56,7 @@ const EditProfileComponent = () => {
                 </div>
             </div>
             <div className="mb-4">
-                <div className="container p-2 pt-0 border bg-light rounded-2">
+                <div className="container border bg-light rounded-2">
                     <label form="website" className="small text-secondary">
                     </label> <br/>
                     <textarea className="wd-text-box bg-light border-0 text-secondary"
@@ -64,7 +64,7 @@ const EditProfileComponent = () => {
                 </div>
             </div>
             <div className="mb-4">
-                <div className="container p-2 pt-0 border bg-light rounded-2">
+                <div className="container border bg-light rounded-2">
                     <label form="birthdate_input" className="small text-secondary">
                         Birth date ·<b> Edit</b>
                         <textarea className="wd-text-box bg-light border-0"
