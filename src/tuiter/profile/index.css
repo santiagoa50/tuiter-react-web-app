@@ -1,0 +1,22 @@
+.wd-under-banner-margin {
+    margin-bottom: 90px;
+}
+
+.wd-100-percent-width {
+    width: 100%;
+}
+
+.wd-banner-dim {
+    width: 100%;
+    height: 260px;
+}
+
+.wd-profile-picture-pos {
+    position: absolute;
+    left: 20px;
+    bottom: -25%;
+}
+
+.wd-profile-picture-dim {
+    width: 120px;
+}

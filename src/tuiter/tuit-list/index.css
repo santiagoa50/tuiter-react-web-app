@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+}
+.wd-picture {
+    height: 45px;
+    width: 45px;
+}
+
+#retweet, #like, #share, #reply, #reply-text, #retweet-text, #like-text {
+    border-color: grey;
+    color: grey;
+}
+
+#checkmark {
+    color: #0d6efd;
+
+}
