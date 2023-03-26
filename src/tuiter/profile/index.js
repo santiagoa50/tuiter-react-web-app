@@ -1,64 +1,69 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {useSelector} from "react-redux";
+import "./index.css"
 
-const ProfileComponent = () => {
-    const {currentUser} = useSelector((state) => state.profile)
+const ProfileComponent = ( {currentUser}) => {
+
     return(
         <>
-            <div className="container p-0 pb-1 mt-2 border border-light rounded-2">
-                <div className="row ms-3 mt-2">
-                    <div className="col-1">
-                        <Link to="/tuiter/home" className="text-secondary">
+            <li className="list-group-item pe-3 wd-border">
+                <div className="pt-2 ps-0 pe-0">
+                    <div className="row pt-1">
+                        <div className="col-1">
+                            <Link to="/tuiter/home" className="text-secondary">
+                                <i className="bi bi-arrow-left"></i>
+                            </Link>
+                        </div>
+                        <div className="col-10">
+                            <h5 className="m-0 fw-bold">Han Solo</h5>
+                            <p className="m-0 text-secondary">6,114 Tuits</p>
+                        </div>
 
-                        </Link>
-                    </div>
-                    <div className="col-11">
-                        <h5 className="m-0 fw-bold">{currentUser.name}</h5>
-                        <p className="m-0 text-secondary">{currentUser.numOfTuits} Tuits</p>
+                        <div className="position-relative wd-margin">
+                            <img className= "img-responsive mt-1 wd-banner"
+                                 src={`../../images/trio.jpeg`} alt= "img"/>
+                            <img className="rounded-pill wd-profile-picture"
+                                 src={`../../images/han solo.jpg`} alt= "img"/>
+                            <Link to="/tuiter/edit-profile">
+                                <button className="rounded-pill btn btn-light float-end mt-3 me-3 ps-3 pe-3">
+                                    Edit profile
+                                </button>
+                            </Link>
+                        </div>
+
+
+                        <div className="ps-3">
+                            <h5 className="m-0 fw-bold">Han Solo</h5>
+                            <p className="m-0 text-secondary">@hansolo</p>
+                            <p className="mt-3 mb-3">Charming former smuggler with a heart of gold.</p>
+
+                            <div className="row mb-2">
+                                <div className="col-auto">
+                                    <i className="bi bi-geo-alt" id="location"></i>
+                                    <div className="d-inline ms-2 text-secondary">Corellia</div>
+                                </div>
+                                <div className="col-auto">
+                                    <i className="bi bi-balloon"></i>
+                                    <div className="d-inline ms-2 text-secondary">Born 32 BBY</div>
+                                </div>
+                                <div className="col-auto">
+                                    <i className="bi bi-calendar3"></i>
+                                    <div className="d-inline ms-2 text-secondary">Joined 31 BBY</div>
+                                </div>
+                            </div>
+
+                            <div className="row mb-3">
+                                <div className="col-auto">
+                                    <div className="d-inline text-secondary">340 Following</div>
+                                </div>
+                                <div className="col-auto">
+                                    <div className="d-inline text-secondary">223 Followers</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="position-relative wd-100-percent-width wd-under-banner-margin">
-                    <img className= "img-responsive mt-1 wd-banner-dim"
-                         src={`/tuiter/images/${currentUser.bannerPicture}`} alt= "img"/>
-                    <img className="rounded-pill wd-profile-picture-pos wd-profile-picture-dim"
-                         src={`/tuiter/images/${currentUser.profilePicture}`} alt= "img"/>
-                    <Link to="/tuiter/edit-profile">
-                        <button className="rounded-pill btn btn-light float-end mt-3 me-3 ps-3 pe-3">
-                            Edit profile
-                        </button>
-                    </Link>
-                </div>
-                <div className="ps-4">
-                    <h5 className="m-0 fw-bold">{currentUser.name}</h5>
-                    <p className="m-0 text-secondary">@{currentUser.handle}</p>
-                    <p className="mt-2 mb-2">{currentUser.bio}</p>
-
-                    <div className="row mb-2">
-                        <div className="col-auto">
-
-                            <div className="d-inline ms-2 text-secondary">{currentUser.location}</div>
-                        </div>
-                        <div className="col-auto">
-
-                            <div className="d-inline ms-2 text-secondary">Born {currentUser.dateOfBirth}</div>
-                        </div>
-                        <div className="col-auto">
-
-                            <div className="d-inline ms-2 text-secondary">Joined {currentUser.dateJoined}</div>
-                        </div>
-                    </div>
-
-                    <div className="row mb-3">
-                        <div className="col-auto">
-                            <div className="d-inline text-secondary">{currentUser.followingCount} Following</div>
-                        </div>
-                        <div className="col-auto">
-                            <div className="d-inline text-secondary">{currentUser.followersCount} Followers</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </li>
         </>
     );
 };

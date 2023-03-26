@@ -1,16 +1,16 @@
 [
   {
-    "name": "Andrew Santiago",
-    "handle": "andrewsantiago",
-    "profilePicture": "profile-picture.jpeg",
-    "bannerPicture": "",
-    "bio": "",
+    "name": "Han Solo",
+    "handle": "hansolo",
+    "profilePicture": "han solo.jpg",
+    "bannerPicture": "trio.jpeg",
+    "bio": "Charming former smuggler with a heart of gold.",
     "website": "github.com/santiagoa50",
-    "location": "Boston, MA",
-    "dateOfBirth": "1/314/1999",
-    "dateJoined": "1/2018",
+    "location": "Corellia",
+    "dateOfBirth": "32 BBY",
+    "dateJoined": "31 BBY",
     "followingCount": 340,
     "followersCount": 223,
-    "numOfTuits": 117
+    "numOfTuits": 6114
   }
 ]

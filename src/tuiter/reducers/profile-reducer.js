@@ -2,19 +2,18 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     currentUser: {
-        name: 'Andrew Santiago',
-        handle: 'andrewsantiago',
-        profilePicture: 'profile-picture.jpeg',
-        bannerPicture: 'image-8.jpeg',
-        bio: '',
-        website: 'github.com/santiagoa50',
-        location: 'Boston, MA',
-        dateOfBirth: '1/31/1999',
-        dateJoined: '4/2019',
+        name: 'Han Solo',
+        handle: 'hansolo',
+        profilePicture: 'han solo.jpg',
+        bannerPicture: 'trio.jpeg',
+        bio: 'Charming former smuggler with a heart of gold.',
+        location: 'Corellia',
+        dateOfBirth: '32 BBY',
+        dateJoined: '31 BBY',
         followingCount: 340,
         followersCount: 223,
-        numOfTuits: 117,
-        editingDOB: false
+        numOfTuits: 6114
+
     }
 }
 
