@@ -1,5 +1,5 @@
 .wd-margin {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .wd-banner{
@@ -10,11 +10,15 @@
 .wd-profile-picture {
     position: absolute;
     left: 45px;
-    bottom: -10%;
-    width: 180px;
-    height: 180px;
+    bottom: -5%;
+    width: 150px;
+    height: 150px;
 }
 
 .wd-border {
     border-color: grey;
+}
+body {
+    font-family:  Helvetica Neuel serif;
+    font-size: 14px;
 }

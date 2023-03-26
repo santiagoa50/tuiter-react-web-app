@@ -1,0 +1,28 @@
+body {
+    font-family:  Helvetica Neuel serif;
+    font-size: 14px;
+}
+.wd-margin-edit-profile{
+    margin-bottom: 80px;
+}
+
+.wd-banner{
+    width: 100%;
+    height: 260px;
+}
+
+.wd-edit-profile-picture {
+    position: absolute;
+    left: 45px;
+    bottom: -25%;
+    width: 150px;
+    height: 150px;
+}
+
+.wd-border {
+    border-color: grey;
+}
+.wd-text-box {
+    width: 100%;
+    border-color: grey;
+}
