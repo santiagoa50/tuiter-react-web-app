@@ -7,11 +7,11 @@ const WhoToFollowList = () => {
 
     return(
         <ul className="list-group mt-2">
-            <a className="list-group-item">
+            <div   className="list-group-item">
                 <div className="container-fluid ps-1 pt-1">
                     <h5 className="fw-bold">Who to follow</h5>
                 </div>
-            </a>
+            </div>
             {
                 whoArray.map(who =>
                     <WhoToFollowListItem key={who._id} who={who}/>

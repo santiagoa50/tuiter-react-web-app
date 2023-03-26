@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import "./index.css"
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuit} from "../tuits/tuits-reducer"
 const TuitItem = ( {tuit} ) => {
 
     const dispatch = useDispatch();
