@@ -1,8 +1,7 @@
 import React from "react";
-import WhatsHappening from "../home/whats-happening";
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import profile from "../data/profile.json"
+
 const ProfileComponent = () => {
     const {currentUser} = useSelector((state) => state.profile)
     return(
