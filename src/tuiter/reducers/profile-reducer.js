@@ -2,14 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     currentUser: {
-        name: 'Norrec Nieh',
-        handle: 'tyrannorrec',
+        name: 'Andrew Santiago',
+        handle: 'andrewsantiago',
         profilePicture: 'profile-picture.jpeg',
         bannerPicture: 'image-8.jpeg',
-        bio: 'Theology, philosophy, cybersecurity, martial arts. Matthew 7:13',
-        website: 'github.com/tyrannorrec',
+        bio: '',
+        website: 'github.com/santiagoa50',
         location: 'Boston, MA',
-        dateOfBirth: '9/14/1993',
+        dateOfBirth: '1/31/1999',
         dateJoined: '4/2019',
         followingCount: 340,
         followersCount: 223,
