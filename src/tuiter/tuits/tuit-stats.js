@@ -45,7 +45,7 @@ const TuitStats = ( {tuit} ) => {
                                  className="col-2 wd-no-decoration">
                     <i className="bi bi-hand-thumbs-down"></i>
 
-                    <div className="d-inline  text-secondary">{tuit.likes}</div>
+                    <div className="d-inline  text-secondary">{tuit.dislikes}</div>
                     </Link>
 
                     <Link to="#"

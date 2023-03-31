@@ -21,7 +21,12 @@ const templateTuit = {
     "retuits": 0,
     "likes": 0,
 }
-
+/*
+const initialState = {
+    tuits: [],
+    loading: false
+}
+*/
 const tuitsSlice = createSlice({
     name: 'tuits',
     initialState: tuits,
