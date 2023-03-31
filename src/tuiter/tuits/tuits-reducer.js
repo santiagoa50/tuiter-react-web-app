@@ -22,11 +22,6 @@ const templateTuit = {
     "likes": 0,
 }
 
-const initialState = {
-    tuits: [],
-    loading: false
-}
-
 const tuitsSlice = createSlice({
     name: 'tuits',
     initialState: tuits,
