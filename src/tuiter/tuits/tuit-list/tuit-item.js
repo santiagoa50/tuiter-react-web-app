@@ -2,11 +2,14 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import "./index.css"
-import {deleteTuit} from "../tuits/tuits-reducer"
+import {deleteTuit} from "../tuits-reducer"
+//import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "../tuit-stats";
 const TuitItem = ( {tuit} ) => {
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
+        //dispatch(deleteTuitThunk(id));
         dispatch(deleteTuit(id));
     }
 
@@ -28,26 +31,13 @@ const TuitItem = ( {tuit} ) => {
                     <div className="text-secondary d-inline">{' '}<b>·</b> {tuit.time}</div>
                     <div className="mb-2">{tuit.tuit}</div>
 
-                    <div className="pt-2 ps-0 pe-0">
+
                         <div className="row">
-                            <Link to="#" className="col-3">
-                                <i className="bi bi-chat" id="reply"></i>
-                                <div className="d-inline ms-2" id="reply-text">{tuit.replies}</div>
-                            </Link>
-                            <Link to="#" className="col-3">
-                                <i className="bi bi-arrow-repeat" id="retweet"></i>
-                                <div className="d-inline ms-2" id="retweet-text">{tuit.retuits}</div>
-                            </Link>
-                            <Link to="#" className="col-3">
-                                <i className="bi bi-heart" id="like"></i>
-                                <div className="d-inline ms-2" id="like-text">{tuit.likes}</div>
-                            </Link>
-                            <Link to="#" className="col-3">
-                                <i className="bi bi-share" id="share"></i>
-                            </Link>
+
+                            <TuitStats tuit={tuit}/>
                         </div>
 
-                    </div>
+
 
                 </div>
             </div>
