@@ -7,9 +7,10 @@ import TuitItem
 import {findTuitsThunk}
     from "../../services/tuits-thunks";
 const Tuits = () => {
+
     const {tuits, loading} = useSelector(state => state.tuitsData)
     const dispatch = useDispatch()
-    useEffect(() => {dispatch(findTuitsThunk())}, [])
+    useEffect(() => {dispatch(findTuitsThunk())}, [dispatch])
 
     return (
         <ul className="list-group mt-2">
