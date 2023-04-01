@@ -1,21 +1,37 @@
 import React, {useState} from "react";
-import {useDispatch} from "react-redux";
-import {createTuit} from "../tuits/tuits-reducer";
-//import {createTuitThunk} from "../../services/tuits-thunks";
+import {useDispatch, useSelector} from "react-redux";
+//import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
+    const {currentUser} = useSelector((state) => state.profile)
     const dispatch = useDispatch();
+
+    const templateTuit = {
+        ...currentUser,
+        "username": "Han Solo",
+        "image": "../../images/han solo.jpg",
+        "handle": "@hansolo",
+        "topic": "",
+        "time": "just now",
+        "liked": false,
+        "replies": 0,
+        "retuits": 0,
+        "likes": 0,
+    }
     const tuitClickHandler = () => {
         const newTuit = {
+            ...templateTuit,
             tuit: whatsHappening
         }
-        //dispatch(createTuitThunk(newTuit));
-        dispatch(createTuit(newTuit));
+        //dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
+
     }
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="../../images/nasa.png" width={60} className="rounded-pill" alt="img"/>
+                <img src="../../images/han solo.jpg" width={60} className="rounded-pill" alt="img"/>
             </div>
             <div className="col col-9 col-md-10">
                <textarea value={whatsHappening} placeholder="What's happening?"

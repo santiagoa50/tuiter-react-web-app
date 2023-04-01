@@ -1,48 +1,36 @@
 import { createSlice }
     from "@reduxjs/toolkit";
-import tuits
-    from '../data/tuits.json';
+//import tuits
+    //from '../data/tuits.json';
 import {createTuitThunk, findTuitsThunk, deleteTuitThunk, updateTuitThunk}
     from "../../services/tuits-thunks";
 
 
 const currentUser = {
-    "userName": "NASA",
-    "handle": "nasa",
-    "image": "../../images/nasa.png",
+    "userName": "Han Solo",
+    "handle": "@hansolo",
+    "image": "../../images/han solo.jpg",
 };
 
 const templateTuit = {
     ...currentUser,
-    "topic": "Space",
+    "topic": "",
     "time": "2h",
-    "liked": true,
+    "liked": false,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
 }
-/*
+
 const initialState = {
     tuits: [],
     loading: false
 }
-*/
+
 const tuitsSlice = createSlice({
     name: 'tuits',
-    initialState: tuits,
-    reducers: {
-        createTuit(state, action) {
-            state.unshift({
-                ...action.payload,
-                ...templateTuit,
-                _id: (new Date()).getTime(),
-            })
-        },
-        deleteTuit(state, action) {
-            const index = state.findIndex(tuit => tuit._id === action.payload);
-            state.splice(index, 1);
-        }
-    },
+    initialState,
+
     extraReducers: {
         [createTuitThunk.fulfilled]:
             (state, { payload }) => {
@@ -80,8 +68,20 @@ const tuitsSlice = createSlice({
                     ...payload
                 }
             }
-
     },
+    reducers: {
+        createTuit(state, action) {
+            state.unshift({
+                ...action.payload,
+                ...templateTuit,
+                _id: (new Date()).getTime(),
+            })
+        },
+        deleteTuit(state, action) {
+            const index = state.findIndex(tuit => tuit._id === action.payload);
+            state.splice(index, 1);
+        }
+    }
 });
 
 export const {createTuit, deleteTuit} = tuitsSlice.actions;

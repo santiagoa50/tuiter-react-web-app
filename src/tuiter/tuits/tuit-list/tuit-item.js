@@ -1,15 +1,16 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import "./index.css"
-import {deleteTuit} from "../tuits-reducer"
-//import {deleteTuitThunk} from "../../../services/tuits-thunks";
+//import {deleteTuit} from "../../reducers/tuits-reducer"
+import {deleteTuitThunk} from "../../../services/tuits-thunks";
 import TuitStats from "../tuit-stats";
+
 const TuitItem = ( {tuit} ) => {
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        //dispatch(deleteTuitThunk(id));
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
+        //dispatch(deleteTuit(id));
     }
 
     return(
@@ -25,18 +26,14 @@ const TuitItem = ( {tuit} ) => {
                     <i className="bi bi-x-lg float-end"
                        onClick={() => deleteTuitHandler(tuit._id)}></i>
 
-                    <div className="fw-bold d-inline">{tuit.userName} <i className="bi bi-check-circle-fill" id="checkmark"></i></div>
-                    <div className="text-secondary d-inline ms-2">@{tuit.handle}</div>
-                    <div className="text-secondary d-inline">{' '}<b>·</b> {tuit.time}</div>
+                    <div className="fw-bold d-inline">{tuit.username} <i className="bi bi-check-circle-fill" id="checkmark"></i></div>
+                    <div className="text-secondary d-inline ms-2">{tuit.handle}</div>
+                    <div className="text-secondary d-inline">{' '}· {tuit.time}</div>
                     <div className="mb-2">{tuit.tuit}</div>
 
-
-                        <div className="row">
-
-                            <TuitStats tuit={tuit}/>
-                        </div>
-
-
+                    <div className="row">
+                        <TuitStats tuit={tuit}/>
+                    </div>
 
                 </div>
             </div>

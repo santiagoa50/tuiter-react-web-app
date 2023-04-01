@@ -8,9 +8,10 @@ body {
     width: 45px;
 }
 
-#retweet, #like, #share, #reply, #reply-text, #retweet-text, #like-text {
+#retweet, #like, #share, #reply, #reply-text, #retweet-text, #like-text, #dislike{
     border-color: grey;
     color: grey;
+
 }
 
 #checkmark {
