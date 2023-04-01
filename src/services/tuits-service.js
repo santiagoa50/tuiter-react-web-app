@@ -15,10 +15,13 @@ export const findTuits = async () => {
 }
 
 export const deleteTuit = async (tid) => {
-    const response = await axios.delete(`${TUITS_API}/${tid}`)
-    return response.data;
+    const response = await axios
+        .delete(`${TUITS_API}/${tid}`)
+    return response.data
 }
 
 export const updateTuit = async (tuit) => {
-    return await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
+    const response = await axios
+        .put(`${TUITS_API}/${tuit._id}`, tuit);
+    return response;
 }

@@ -9,7 +9,7 @@ import {findTuitsThunk}
 const Tuits = () => {
     const {tuits, loading} = useSelector(state => state.tuitsData)
     const dispatch = useDispatch()
-    useEffect(() => {dispatch(findTuitsThunk())})
+    useEffect(() => {dispatch(findTuitsThunk())}, [])
 
     return (
         <ul className="list-group mt-2">
