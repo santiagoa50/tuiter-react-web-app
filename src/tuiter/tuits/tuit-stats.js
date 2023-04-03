@@ -35,6 +35,7 @@ const TuitStats = ( {tuit} ) => {
 
                     </Link>
                     <Link to="#" className="col-2">
+
                         <div>
                         <i onClick={() => dispatch(updateTuitThunk({
 
@@ -43,6 +44,7 @@ const TuitStats = ( {tuit} ) => {
 
                         }))} className="bi bi-hand-thumbs-down-fill me-2"></i>{tuit.dislikes}
                         </div>
+
                     </Link>
                     <Link to="#"
                           className="col-2" id="share">
