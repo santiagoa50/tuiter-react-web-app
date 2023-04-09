@@ -15,9 +15,11 @@ const WhatsHappening = () => {
         "topic": "",
         "time": "just now",
         "liked": false,
+        "disliked": false,
         "replies": 0,
         "retuits": 0,
         "likes": 0,
+        "disklies": 0,
     }
     const tuitClickHandler = () => {
         const newTuit = {

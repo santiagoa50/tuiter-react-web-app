@@ -26,26 +26,43 @@ const TuitStats = ( {tuit} ) => {
                     </Link>
                     <Link to="#" className="col-2">
 
-                        <div>
-                            <i onClick={() => dispatch(updateTuitThunk({
-                                ...tuit,
-                                likes: tuit.likes + 1
-                            }))} className="bi bi-heart-fill me-2 text-danger"></i>{tuit.likes}
-                        </div>
+                        <div className="text-secondary float-start">
 
+                                {tuit.liked && <i onClick={() => dispatch(updateTuitThunk({
+                                    ...tuit,
+                                    liked: !tuit.liked,
+                                    likes: tuit.likes - 1
+                                }))} className="bi bi-heart-fill text-danger"></i>}
+                                {!tuit.liked && <i onClick={() => dispatch(updateTuitThunk({
+                                    ...tuit,
+                                    liked: !tuit.liked,
+                                    likes: tuit.likes + 1
+                                }))} className="bi bi-heart"></i>}
+
+                            </div>
+                        <div className="text-secondary ms-4 col-2">{tuit.likes}</div>
                     </Link>
+
                     <Link to="#" className="col-2">
+                        <div className="text-secondary float-start">
 
-                        <div>
-                        <i onClick={() => dispatch(updateTuitThunk({
+                            {tuit.disliked &&
+                                <i onClick={() => dispatch(updateTuitThunk({
+                                                  ...tuit,
+                                                  disliked: !tuit.disliked,
+                                                  dislikes: tuit.dislikes - 1
+                                              }))} className="bi bi-hand-thumbs-down-fill"></i>}
+                            {!tuit.disliked &&
+                                <i onClick={() => dispatch(updateTuitThunk({
+                                                   ...tuit,
+                                                   disliked: !tuit.disliked,
+                                                   dislikes: tuit.dislikes + 1
+                                               }))} className="bi bi-hand-thumbs-down" ></i>}
 
-                            ...tuit,
-                            dislikes: tuit.dislikes + 1
-
-                        }))} className="bi bi-hand-thumbs-down-fill me-2"></i>{tuit.dislikes}
                         </div>
-
+                        <div className="text-secondary ms-4 col-2">{tuit.dislikes}</div>
                     </Link>
+
                     <Link to="#"
                           className="col-2" id="share">
                         <i className="bi bi-share-fill"></i>
