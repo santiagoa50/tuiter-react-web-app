@@ -35,6 +35,7 @@ const TuitStats = ( {tuit} ) => {
                                 }))} className="bi bi-heart-fill text-danger"></i>}
                                 {!tuit.liked && <i onClick={() => dispatch(updateTuitThunk({
                                     ...tuit,
+                                    // increment likes
                                     liked: !tuit.liked,
                                     likes: tuit.likes + 1
                                 }))} className="bi bi-heart"></i>}
