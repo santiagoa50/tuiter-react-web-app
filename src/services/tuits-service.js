@@ -3,7 +3,7 @@ import axios from 'axios';
 //const TUITS_API = 'https://simple-http-node-express-server-he2q.onrender.com/api/tuits';
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
-
+// const TUITS_API = 'mongodb+srv://santiagoan:hellomeow12@cluster0.fba779y.mongodb.net/?retryWrites=true&w=majority'
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
