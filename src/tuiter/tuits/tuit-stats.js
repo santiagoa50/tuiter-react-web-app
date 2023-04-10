@@ -50,6 +50,7 @@ const TuitStats = ( {tuit} ) => {
                             {tuit.disliked &&
                                 <i onClick={() => dispatch(updateTuitThunk({
                                                   ...tuit,
+                                                    // increment dislikes
                                                   disliked: !tuit.disliked,
                                                   dislikes: tuit.dislikes - 1
                                               }))} className="bi bi-hand-thumbs-down-fill"></i>}
